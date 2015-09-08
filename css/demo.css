@@ -1,0 +1,51 @@
+.clear {
+	clear: both;
+}
+#form-container {
+	color: #FFF;
+	margin-bottom: 30px;
+	-moz-border-radius: 12px;
+	-khtml-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+}
+td {
+	white-space: nowrap;
+	padding: 5px;
+}
+tr {
+	float: left;
+	padding: 5px;
+	width: 400px;
+}
+.jqTransformTextarea tr {
+	float:none;
+	width:100%;
+}
+textarea {
+	color: #404040;
+	font-family: Arial, Helvetica, sans-serif;
+}
+td > button {
+	text-indent: 8px;
+}
+.error {
+	background-color: #AB0000;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 10px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+#loading {
+	position: relative;
+	bottom: 9px;
+	visibility: hidden;
+}
+.tutorial-info {
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+}

@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+	font-family: 'rustler';
+	src: url('fonts/rustler_-webfont.eot');
+	src: url('fonts/rustler_-webfont.eot?#iefix') format('embedded-opentype'),  url('fonts/rustler_-webfont.woff') format('woff'),  url('fonts/rustler_-webfont.ttf') format('truetype'),  url('fonts/rustler_-webfont.svg#rustlerregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'cowboys';
+	src: url('fonts/cowboys-webfont.eot');
+	src: url('fonts/cowboys-webfont.eot?#iefix') format('embedded-opentype'),  url('fonts/cowboys-webfont.woff') format('woff'),  url('fonts/cowboys-webfont.ttf') format('truetype'),  url('fonts/cowboys-webfont.svg#cowboyssolid') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'winslett';
+	src: url('winslett-webfont.eot');
+	src: url('fonts/winslett-webfont.eot?#iefix') format('embedded-opentype'),  url('fonts/fonts/winslett-webfont.woff') format('woff'),  url('fonts/winslett-webfont.ttf') format('truetype'),  url('fonts/winslett-webfont.svg#winslettregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, #nav li a {
+	font-family: 'rustler';
+}
+{
+ font-family: 'cowboys';
+ font-style:normal;
+}
+h5, #header #banner a#reservar {
+	font-family: 'winslett';
+}
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+body {
+	background: url(../images/bg_banner.jpg) no-repeat center top #000000;
+	color: #ffffff;
+	text-align: left;
+}
+h1 {
+	color: #efc341;
+	line-height:90px;
+}
+h2 {
+	background: url(../images/icn_placa.png) no-repeat;
+	color: #efc340;
+	font-size: 40px;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	min-height: 42px;
+	padding-left: 49px;
+	padding-top: 7px;
+}
+h3 {
+	color: #ffba00;
+	font-size: 22px;
+	margin-top: 12px;
+}
+h5 {
+	font-weight: bold;
+	min-width: 200px;
+	text-align: center;
+	text-shadow: 0px 0px 5px #000000;
+	text-transform: uppercase;
+}
+p {
+	margin: 12px 0px;
+}
+a {
+	color: #efc340;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.container {
+}
+#header {
+	background: url(../images/wood_board.png) no-repeat top center;
+}
+#header #nav {
+	font-size: 26px;
+	min-height: 190px;
+	list-style: none;
+}
+#header #nav li {
+	float: left;
+	list-style: none;
+	margin-top: 135px;
+	text-align: center;
+}
+#header #nav li#logo {
+	margin-top: 30px;
+}
+#header #nav li a {
+	color: #FFF;
+	font-size: 30px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #000;
+}
+#header #nav li a:hover {
+	color: #efc340;
+}
+#header #nav li#logo a {
+	background: url(../images/escudo_vaquero.png) no-repeat;
+	display: block;
+	height: 154px;
+	margin: 0px auto;
+	text-indent: -9999px;
+	width: 125px;
+}
+#header #banner {
+	background: url(../images/cowboy.png) no-repeat bottom center;
+	margin-top: 30px;
+	min-height: 359px;
+	padding-top: 60px;
+}
+
+span#verano,
+span#vaquero,
+span#dosmiltrece,
+div#cnreservar  {
+	display:block;
+	position: relative;
+	font-size: 80px;
+	margin: 0 auto;
+	text-align:center;
+}
+span#verano div,
+span#vaquero div,
+span#dosmiltrece div,
+div#cnreservar a#reservar {
+	color: #ffbf00;
+	left:0%;
+	position: absolute;
+	right:0%;
+	text-decoration:none;
+	text-align:center;
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,9)), color-stop(10%, rgba(0,0,0,.0)), to(rgba(0,0,0,9)));
+}
+span#verano:after,
+span#vaquero:after,
+span#dosmiltrece:after {
+	color: #fcd04e;
+	font-size: 80px;
+	text-shadow: 3px 3px 0 #412602;
+	text-align:center;
+}
+span#verano  {
+	letter-spacing: 12px;
+	margin-top:10px;
+	width: 280px;
+}
+span#vaquero  {
+	letter-spacing: 5.5px;
+	width: 278px;
+}
+span#dosmiltrece  {
+	letter-spacing: 53px;
+	width: 278px;
+}
+div#cnreservar  {
+	letter-spacing:2px;
+	min-width:221px;
+	max-width: 280px;
+	padding:10px 0px 14px;
+	
+	box-shadow: 1px 1px 5px #000000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #AB4046;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FiNDA0NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4OTI3MmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AB4046), color-stop(100%,#89272C));
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab4046', endColorstr='#89272c',GradientType=0 );
+}
+
+span#verano:after {
+	content : 'VERANO';
+	color: #fcd04e;
+	text-shadow: 3px 3px 0 #412602;
+}
+span#vaquero:after {
+	content : 'VAQUERO';
+}
+span#dosmiltrece div {
+	color: #e2e1e1;
+}
+span#dosmiltrece:after {
+	content : '2013';
+	color: #FFFFFF;
+}
+span#dosmiltrece div,
+span#dosmiltrece:after{
+	padding-left:0px;
+}
+#header #banner div h5#disfruta {
+	font-size: 28px;
+	letter-spacing: 0px;
+	line-height: 35px;
+	margin-bottom: 10px;
+}
+#header #banner h5#aparta {
+	color: #f6cb40;
+	font-size: 27px;
+	line-height: 30px;
+}
+
+div#cnreservar {
+	font-family: 'winslett';
+	font-size: 40px;
+	margin-top:30px;
+}
+div#cnreservar:after {
+	content : 'RESERVAR';
+	color: #fcd04e;
+	text-shadow: 3px 3px 0 #412602;
+}
+div#cnreservar a:hover {
+	color: #FF3 !important;
+}
+
+#content {
+	background: url(../images/bg_content_landing.png) no-repeat center top;
+	padding-top: 150px;
+}
+#content #fechas, #content #prices {
+	margin-bottom: 50px;
+}
+#content #fechas div {
+	background: url(../images/bg-box.jpg) repeat-x bottom #a63b41;
+	margin: 0px 0px 30px;
+	padding-top: 10px;
+	text-align: center;
+	border: solid 6px #efc340;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+#content #fechas p {
+	margin: 12px 0px 24px;
+}
+#content #prices ul li {
+	background: url(../images/numbers.jpg) no-repeat left 5px;
+	list-style: none;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+#content #prices ul#promo li p {
+	margin: 0px;
+}
+#content #prices ul li.uno, #content #prices ul li.dos, #content #prices ul li.tres {
+	margin-top: 30px;
+}
+#content #prices ul#promo li.uno {
+	background-position: 0px 0px;
+}
+#content #prices ul#promo li.dos {
+	background-position: 0px -240px;
+}
+#content #prices ul#promo li.tres {
+	background-position: 0px -480px;
+}
+#content #prices ul#promo li.cuatro {
+	background-position: 0px -720px;
+}
+#content #prices ul#promo li.cinco {
+	background-position: 0px -960px;
+}
+#content #prices ul#promo li p {
+	padding-left: 65px;
+}
+.footnote {
+	font-size: 12px;
+}
+#footer {
+	background: url(../images/bg_footer_landing.jpg) no-repeat center bottom;
+	min-height: 314px;
+}
+#pie {
+	background: url(../images/logoPVfooter.png) no-repeat left 5px;
+	border-top: solid 1px #999;
+	font-size: 11px;
+	padding: 10px 0px 20px 40px;
+}
+#pie a.email-interno {
+	float: right;
+}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+body {
+	background: url(../images/bg_banner-mob.jpg) no-repeat center top #000000;
+}
+h2 {
+	background-position: 11px 0px;
+	padding-left: 69px !important;
+}
+.onecol, h5 {
+	display: none;
+}
+#header {
+	background: none;
+}
+#header #nav {
+	margin: 150px auto 0px;
+	min-height: inherit;
+	
+}
+#header #nav li {
+	margin: 5px 0px 0px;
+}
+#header #nav li a {
+	font-size: 22px;
+}
+#header #nav #logo {
+	position: absolute;
+	left: -25%;
+	right: -25%;
+	top: -30px;
+}
+#header #banner {
+	background: none;
+	padding-top: 0px;
+}
+#content {
+	background: url(../images/bg_content_landing-mob.jpg) no-repeat center top;
+}
+#content #prices ul li {
+}
+#content #prices ul li.uno, #content #prices ul li.dos, #content #prices ul li.tres {
+	margin-top: 0px;
+}
+#content #prices ul#promo li.uno {
+	background-position: 20px 0px;
+	margin-top: 30px;
+}
+#content #prices ul#promo li.dos {
+	background-position: 20px -240px;
+}
+#content #prices ul#promo li.tres {
+	background-position: 20px -480px;
+}
+#content #prices ul#promo li.cuatro {
+	background-position: 20px -720px;
+}
+#content #prices ul#promo li.cinco {
+	background-position: 20px -960px;
+}
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
+}
